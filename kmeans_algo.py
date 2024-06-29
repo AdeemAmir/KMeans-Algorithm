@@ -80,9 +80,9 @@ class KMeans:
             plt.figure()
             if labels is not None:
                 for j in range(self.n_clusters):
-                    plt.scatter(X[j:, 0], X[j:, 1], label=f'Cluster {j}', color=colors(j / self.n_clusters), s=25)
+                    plt.scatter(X[labels==j, 0], X[labels==j, 1], label=f'Cluster {j}', color=colors(j / self.n_clusters), s=20)
             else:
-                plt.scatter(X[:, 0], X[:, 1], color='black', label='Data points', s=25)
+                plt.scatter(X[:, 0], X[:, 1], color='black', label='Data points', s=20)
             plt.scatter(centroids[:, 0], centroids[:, 1], color='red', marker='x', s=100, label='Centroids')
             plt.title(f'{filename} - Iteration {i}')
             plt.legend()
