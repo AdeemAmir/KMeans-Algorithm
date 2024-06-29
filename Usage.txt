@@ -1,0 +1,18 @@
+Python Code - NC Project
+
+User-friendly Method:
+1.       Make sure you have python installed.
+2.       Install the Prerequisites from the inst.bat inside _prerequisites folder.
+3.       Make sure your thes to be processed are in input folder.
+4.1.     Double Click the _dir_execute.py
+4.2.1.  Double click the Direct_Run.py
+4.2.2. Follow the prompts.
+
+CMD Method:
+1. Install Python.
+2. run cmd
+3. cd to _prerequisites folder.
+4. run pip install -r requirements.csv
+5. cd..
+6. run python run.py -h
+7. See the help to run the program as you wish.
